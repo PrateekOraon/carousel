@@ -17,6 +17,7 @@ body {
   height: 80%;
   position: relative;
   overflow: hidden;
+  margin: 10px;
 }
 
 .track {
@@ -43,21 +44,34 @@ body {
   opacity: 0.2;
 }
 
+:root {
+  --button-width: 20px;
+  --button-color: rgba(0, 0, 0);
+}
+
 .left-button {
-  background-position: 55px 10px;
+  background-position: 160% 55%;
+
+  border-top: var(--button-width) solid transparent;
+  border-bottom: var(--button-width) solid transparent;
+
+  border-right: var(--button-width) solid var(--button-color);
 }
 
 .right-button {
-  background-position: -35px 10px;
+  background-position: -60% 55%;
+
+  border-top: var(--button-width) solid transparent;
+  border-bottom: var(--button-width) solid transparent;
+
+  border-left: var(--button-width) solid var(--button-color);
+  background-repeat: no-repeat;
 }
 
 .left-button,
 .right-button {
-  height: 100px;
-  width: 100px;
+  width: 10%;
   cursor: pointer;
-  background-image: url("/images/noun_Left-Right\ Arrows_424314.svg");
-  background-repeat: no-repeat;
 }
 
 .dots-container {
