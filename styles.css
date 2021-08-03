@@ -13,8 +13,8 @@ body {
 }
 
 .track-container {
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 80%;
   position: relative;
   overflow: hidden;
 }
@@ -58,4 +58,26 @@ body {
   cursor: pointer;
   background-image: url("/images/noun_Left-Right\ Arrows_424314.svg");
   background-repeat: no-repeat;
+}
+
+.dots-container {
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.current-dot {
+  background: rgba(0, 0, 0);
 }
