@@ -11,7 +11,6 @@ let dots = "";
 const positionSlides = (slides) => {
     slides.forEach((slide, index) => {
         slide.style.left = `${index*slideWidth}px`;
-        slide.style.zIndex = -index;
     })
 }
 
